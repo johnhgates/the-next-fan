@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: seen-scrolled-sold
+    runtime: static
+    rootDir: dist
+    staticPublishPath: .
