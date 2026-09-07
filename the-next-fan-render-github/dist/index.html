@@ -2,61 +2,275 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>THE NEXT FAN | John Gates</title>
-  <meta name="description" content="How does the next fan become a fan? A sports marketing research lab by John Gates.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="How does the next fan become a fan? A sports marketing research project by John Gates.">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f1e8;
+      color: #111827;
+    }
+
+    header {
+      padding: 18px 28px;
+      background: #0b1020;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 72px 8vw;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .hero {
+      background: #034694;
+      color: white;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: clamp(46px, 8vw, 100px);
+      line-height: .9;
+      margin: 0 0 24px;
+      max-width: 1000px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 5vw, 64px);
+      margin: 0 0 20px;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 1.55;
+      max-width: 900px;
+    }
+
+    .big {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: white;
+      border: 2px solid #111827;
+      border-radius: 10px;
+      padding: 22px;
+    }
+
+    .take {
+      background: #ffe45c;
+      color: #111827;
+      border-left: 8px solid #111827;
+      padding: 20px;
+      font-weight: bold;
+      margin-top: 24px;
+    }
+
+    button {
+      background: #111827;
+      color: white;
+      border: 0;
+      padding: 14px 20px;
+      border-radius: 999px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    select {
+      width: 100%;
+      max-width: 520px;
+      padding: 12px;
+      margin: 8px 0 18px;
+    }
+
+    #result {
+      white-space: pre-wrap;
+      background: #111827;
+      color: white;
+      padding: 22px;
+      border-radius: 10px;
+      margin-top: 24px;
+      max-width: 850px;
+    }
+  </style>
 </head>
 
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-
   <header>
-    <a href="#home" class="logo">
-      THE NEXT FAN
-      <span>BY JOHN GATES</span>
-    </a>
-
-    <nav aria-label="Main navigation">
-      <a href="#journey">The fan journey</a>
-      <a href="#strategy">Strategy builder</a>
-      <a href="#research">Research & insights</a>
-      <a href="#about">Why I'm asking</a>
+    <strong>THE NEXT FAN</strong>
+    <nav>
+      <a href="#journey">Journey</a>
+      <a href="#framework">Framework</a>
+      <a href="#strategy">Strategy</a>
+      <a href="#thesis">Thesis</a>
     </nav>
-
-    <button id="menu-toggle" aria-expanded="false" aria-controls="menu">
-      Explore <span>☰</span>
-    </button>
   </header>
 
-  <div id="menu" hidden></div>
-
-  <main id="main"></main>
-
-  <footer>
-    <a href="#home" class="logo">
-      THE NEXT FAN
-      <span>DISCOVERY. ENGAGEMENT. PARTICIPATION. LOYALTY.</span>
-    </a>
-
-    <p>
-      A master's research project by John Gates.<br>
-      Independent. Curious. Probably watching soccer.
-    </p>
-
+  <section class="hero">
     <div>
-      <a href="#thesis">The actual thesis ↗</a>
-      <a href="#sources">Sources & image credits ↗</a>
-      <small>No affiliation with TikTok, any athlete, team or league.</small>
+      <h1>I became a Chelsea fan because of Eden Hazard.</h1>
+      <p class="big">Today, the next Eden Hazard might find you before you ever find him.</p>
+      <p>Discovery. Engagement. Participation. Loyalty. By John Gates.</p>
     </div>
-  </footer>
+  </section>
 
-  <dialog id="detail">
-    <button class="close" aria-label="Close dialog">×</button>
-    <div id="detail-body"></div>
-  </dialog>
+  <section id="journey">
+    <h2>Before the FYP, there was Hazard.</h2>
+    <div class="grid">
+      <div class="card">Eden Hazard</div>
+      <div class="card">Player Interest</div>
+      <div class="card">Watched Chelsea</div>
+      <div class="card">Learned the Team</div>
+      <div class="card">Followed the Culture</div>
+      <div class="card">Chelsea Fan</div>
+    </div>
+    <p>That was my fan journey. What happens when TikTok can initiate millions of journeys like it?</p>
+  </section>
 
-  <script src="content.js"></script>
-  <script src="app.js"></script>
+  <section>
+    <h2>The Research Question</h2>
+    <p class="big">How does TikTok's personalized short-form content environment influence sports fan discovery, engagement, participation and brand loyalty?</p>
+    <div class="take">JG'S TAKE: Going viral is great. Creating a fan is better.</div>
+  </section>
+
+  <section id="framework">
+    <h2>The Next Fan Framework</h2>
+    <div class="grid">
+      <div class="card"><h3>Discovery</h3><p>First exposure to an athlete, team, sport, league or storyline.</p></div>
+      <div class="card"><h3>Engagement</h3><p>Watching, liking, commenting, sharing, following and searching.</p></div>
+      <div class="card"><h3>Participation</h3><p>Creating edits, memes, reactions, debates and fan content.</p></div>
+      <div class="card"><h3>Identity</h3><p>Belonging, rivalries, inside jokes, traditions and the sacred “we won.”</p></div>
+      <div class="card"><h3>Loyalty</h3><p>Repeat behavior, games, merch, tickets, advocacy and long-term fandom.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Congrats on the views. Now what?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Vanity Metrics</h3>
+        <p>1,400,000 views<br>87,000 likes<br>6,400 shares</p>
+      </div>
+      <div class="card">
+        <h3>Actual Fandom Questions</h3>
+        <p>Did they follow? Come back? Watch a game? Join the community? Buy anything? Still care six months later?</p>
+      </div>
+    </div>
+    <h2>Attention does not equal loyalty.</h2>
+    <p>Attention can be the beginning of loyalty, but it is not the same thing.</p>
+  </section>
+
+  <section>
+    <h2>The $17 Hot Dog Test</h2>
+    <p>Saw a video → watched another → followed → commented → joined the community → watched a game → bought a jersey → bought a ticket → paid an offensive amount of money for stadium food → still came back.</p>
+    <div class="take">JG'S TAKE: Getting 2 million views is cool. Getting somebody to willingly pay $17 for a stadium hot dog might tell us a little more.</div>
+  </section>
+
+  <section id="strategy">
+    <h2>Sports Marketing Strategy Builder</h2>
+
+    <label>Who are you?</label><br>
+    <select id="who">
+      <option>Professional Team</option>
+      <option>College Athletics</option>
+      <option>League</option>
+      <option>Athlete</option>
+      <option>Sports Brand</option>
+      <option>Sports Media Company</option>
+    </select><br>
+
+    <label>Who are you trying to reach?</label><br>
+    <select id="audience">
+      <option>Young fans</option>
+      <option>Existing fans</option>
+      <option>Casual fans</option>
+      <option>Fans outside your geographic market</option>
+      <option>Fans of an individual athlete</option>
+      <option>People unfamiliar with your sport</option>
+    </select><br>
+
+    <label>What do you want?</label><br>
+    <select id="goal">
+      <option>Discovery</option>
+      <option>Engagement</option>
+      <option>Participation</option>
+      <option>Community</option>
+      <option>Identity</option>
+      <option>Loyalty</option>
+      <option>Game viewership</option>
+      <option>Attendance</option>
+      <option>Merchandise consideration</option>
+    </select><br>
+
+    <button onclick="buildPlan()">Build My Game Plan</button>
+    <div id="result"></div>
+  </section>
+
+  <section id="thesis">
+    <h2>Yes, there's an actual thesis.</h2>
+    <p>For anyone who looked at the $17 hot dog graphic and thought, “But where's the methodology?” Welcome.</p>
+
+    <div class="grid">
+      <div class="card">Abstract: Waiting for John's research.</div>
+      <div class="card">Literature Review: Waiting for John's research.</div>
+      <div class="card">Methodology: Waiting for John's research.</div>
+      <div class="card">Findings: Waiting for John's research data.</div>
+    </div>
+  </section>
+
+  <script>
+    function buildPlan() {
+      const who = document.getElementById("who").value;
+      const audience = document.getElementById("audience").value;
+      const goal = document.getElementById("goal").value;
+
+      document.getElementById("result").textContent =
+`YOUR GAME PLAN
+
+Organization: ${who}
+Audience: ${audience}
+Primary goal: ${goal}
+
+Recommended fan journey stage:
+${goal}
+
+Content approach:
+Use short-form content that lowers the barrier to discovery, then gives people a reason to come back.
+
+Formats:
+Highlights, athlete personality, behind-the-scenes access, fan reactions, creator collaborations and community prompts.
+
+Metrics:
+Watch time, return viewers, follows, comments, shares, community participation, game viewership, merchandise interest and attendance behavior.
+
+What not to obsess over:
+Views by themselves.
+
+Research support:
+Placeholder. Waiting for John's thesis findings before this becomes a research-backed recommendation.`;
+    }
+  </script>
 </body>
 </html>
